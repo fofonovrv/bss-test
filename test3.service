@@ -1,0 +1,9 @@
+[Unit]
+Description=Test3 service
+After=multi-user.target
+[Service]
+Type=simple
+Restart=always
+ExecStart=/usr/bin/python3 /home/romess/Desktop/test/test3.py
+[Install]
+WantedBy=multi-user.target
